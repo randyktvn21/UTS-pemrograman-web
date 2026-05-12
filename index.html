@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aplikasi Catatan Tugas Harian</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>Aplikasi Catatan Tugas Harian</h1>
+        <p class="subtitle">Data tugas disimpan menggunakan localStorage browser.</p>
+
+        <div class="form-box">
+            <input type="text" id="inputTugas" placeholder="Masukkan nama tugas...">
+            <button onclick="tambahTugas()">Tambah</button>
+        </div>
+
+        <div class="info">
+            <p>Total Tugas: <span id="totalTugas">0</span></p>
+            <p>Tugas Selesai: <span id="tugasSelesai">0</span></p>
+        </div>
+
+        <ul id="daftarTugas"></ul>
+
+        <button class="hapus-semua" onclick="hapusSemuaTugas()">Hapus Semua Data</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
